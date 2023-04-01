@@ -1,10 +1,12 @@
-import Vue from 'vue'
-
+import Vue from "vue";
+import router from "./router";
+import store from "./views/store";
 //Main pages
-import App from './views/app.vue'
-
+import App from "./views/app.vue";
 
 const app = new Vue({
-    el: '#app',
-    components: { App }
+    router,
+    store,
+    el: "#app",
+    components: { App },
 });
