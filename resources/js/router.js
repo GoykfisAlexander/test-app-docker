@@ -5,7 +5,7 @@ export default new Router({
     mode: "history",
     routes: [
         {
-            path: "/comments?page=1&sort=id&order=asc",
+            path: "/comments?page=1&sort=id&order=desc",
         },
     ],
 });

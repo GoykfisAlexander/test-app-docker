@@ -39,7 +39,7 @@ export default {
     },
     created() {
         this.$route.query.page ??
-            this.$router.replace("/comments?page=1&sort=id&order=asc");
+            this.$router.replace("/comments?page=1&sort=id&order=desc");
     },
 };
 </script>

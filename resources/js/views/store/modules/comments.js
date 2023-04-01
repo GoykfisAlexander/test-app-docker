@@ -38,9 +38,7 @@ export default {
         },
         sorted({ state }, { sort, order }) {
             state.comments = state.comments.sort((a, b) => {
-                a = a[sort];
-                b = b[sort];
-                return order === "desc" ? a - b : b - a;
+                return order === "asc" ? a[sort] - b[sort] : b[sort] - a[sort];
             });
         },
     },
@@ -52,7 +50,6 @@ export default {
     state: {
         loading: true,
         comments: [],
-        sort: null,
     },
     getters: {
         loading(state) {
